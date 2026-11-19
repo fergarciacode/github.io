@@ -14,10 +14,10 @@
             <ul class="nav-links">
                 <li><a href="../index.html#home">Home</a></li>
                 <li><a href="../index.html#profile">About</a></li>
-                <li><a href="../academic/" aria-current="page">Academic work</a></li>
-                <li><a href="../art/">Art</a></li>
-                <li><a href="../blog/">Blog</a></li>
-                <li><a href="../other-things/">Other things</a></li>
+                <li><a href="../academic/index.html" aria-current="page">Academic work</a></li>
+                <li><a href="../art/index.html">Art</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../other-things/index.html">Other things</a></li>
                 <li><a href="../index.html#mi-grafo-git">Life graph</a></li>
             </ul>
             <div class="header-utilities">
@@ -32,74 +32,122 @@
         <header class="page-heading academic-page-heading">
             <h1>Academic work</h1>
         </header>
-        <section class="content-section page-content academic-panel" aria-labelledby="education-title">
-            <h2 id="education-title">Education</h2>
+        <details class="content-section page-content academic-panel academic-collapse" open>
+            <summary class="academic-collapse-heading">
+                <h2 id="education-title">Education</h2>
+            </summary>
             <ul class="career-list">
                 <li class="career-item">
-                    <div class="career-item-heading">
-                        <div>
-                            <h3>Psychology</h3>
-                            <p class="qualification-meta"><span>240 ECTS</span><span>EQF Level 6</span></p>
-                        </div>
-                        <span class="career-dates">Sep 2014 – Sep 2025</span>
-                    </div>
-                    <p class="career-institution">
-                        <a class="university-link" href="https://www.uned.es/universidad/inicio/en/">
+                    <div class="career-item-left">
+                        <a class="university-link" href="https://www.uned.es/universidad/inicio/en/" aria-label="Universidad Nacional de Educación a Distancia">
                             <img class="university-logo" src="https://www.uned.es/universidad/.resources/site-uned/webresources/img/logo_uned.gif" alt="" loading="lazy">
-                            <span>Universidad Nacional de Educación a Distancia</span>
                         </a>
-                        <span class="career-location">· Online, Spain</span>
-                    </p>
+                        <span class="career-institution-name">Universidad Nacional de Educación a Distancia</span>
+                        <span class="career-dates">Sep 2014 – Sep 2025</span>
+                        <span class="career-location">Online, Spain</span>
+                    </div>
+                    <div class="career-item-right">
+                        <h3>Major in Psychology</h3>
+                        <p class="qualification-meta"><span>240 ECTS</span><span>EQF Level 6</span></p>
+                        <div class="career-experience">
+                            <span class="career-experience-dates">Feb 2025 – Sep 2025</span>
+                            <strong>Theoretical Neuroscience Internship – Psychology (UNED)</strong>
+                            <span>Internship Repository · Catalonia, Spain</span>
+                            <span class="career-supervisor">Supervised by <strong><a href="https://www.ponce-alvarez.com/">Adrián Ponce Álvarez</a></strong> · UPC</span>
+                            <a class="code-link" href="https://github.com/fergarciacode/Neuroscience_TDA_CP" aria-label="View neuroscience internship code on GitHub">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </li>
                 <li class="career-item">
-                    <div class="career-item-heading">
-                        <div>
-                            <h3>MSc in Particle Physics (High Energy Physics)</h3>
-                            <p class="qualification-meta"><span>60 ECTS</span><span>EQF Level 7</span></p>
-                        </div>
-                        <span class="career-dates">Sep 2020 – Sep 2021</span>
-                    </div>
-                    <p class="career-institution">
-                        <a class="university-link" href="https://www.uab.cat/">
+                    <div class="career-item-left">
+                        <a class="university-link" href="https://www.uab.cat/" aria-label="Universitat Autònoma de Barcelona">
                             <img class="university-logo" src="https://www.uab.cat/Xcelerate/WAI/img/simbol.png" alt="" loading="lazy">
-                            <span>Universitat Autònoma de Barcelona</span>
                         </a>
-                        <span class="career-location">· Barcelona, Spain</span>
-                    </p>
+                        <span class="career-institution-name">Universitat Autònoma de Barcelona</span>
+                        <span class="career-dates">Sep 2020 – Sep 2021</span>
+                        <span class="career-location">Barcelona, Spain</span>
+                    </div>
+                    <div class="career-item-right">
+                        <h3><a href="https://mastercosmosbcn.cat/">MSc - Postgraduate Program in High Energy Physics, Astrophysics &amp; Cosmology</a></h3>
+                        <p class="qualification-meta"><span>60 ECTS</span><span>EQF Level 7</span></p>
+                        <div class="career-experience">
+                            <span class="career-experience-dates">Dec 2020 – Sep 2021</span>
+                            <strong>Research Assistant – Master Final Thesis</strong>
+                            <span>ATLAS Collaboration, UAB-MSU Group</span>
+                            <span class="career-supervisor">Co-supervised by <strong><a href="https://www.icrea.cat/cvs/17629/aurelio-juste/">Aurelio Juste Rozas</a></strong> and <strong>Trisha Farooque</strong></span>
+                        </div>
+                    </div>
                 </li>
                 <li class="career-item">
-                    <div class="career-item-heading">
-                        <div>
-                            <h3>Major in Physics (Theoretical Physics)</h3>
-                            <p class="qualification-meta"><span>240 ECTS</span><span>EQF Level 6</span></p>
-                        </div>
-                        <span class="career-dates">Sep 2014 – Sep 2020</span>
-                    </div>
-                    <p class="career-institution">
-                        <a class="university-link" href="https://www.ucm.es/">
-                            <img class="university-logo" src="https://www.ucm.es/themes/ucm24/media/img/logo.svg" alt="" loading="lazy">
-                            <span>Universidad Complutense de Madrid</span>
+                    <div class="career-item-left">
+                        <a class="university-link" href="https://www.ucm.es/" aria-label="Universidad Complutense de Madrid">
+                            <img class="university-logo" src="../assets/images/logos/ucm.png" alt="" loading="lazy">
                         </a>
-                        <span class="career-location">· Madrid, Spain</span>
-                    </p>
+                        <span class="career-institution-name">Universidad Complutense de Madrid</span>
+                        <span class="career-dates">Sep 2014 – Sep 2020</span>
+                        <span class="career-location">Madrid, Spain</span>
+                    </div>
+                    <div class="career-item-right">
+                        <h3>Major in Physics (Theoretical Physics)</h3>
+                        <p class="qualification-meta"><span>246 ECTS</span><span>EQF Level 6</span></p>
+                        <div class="career-experience">
+                            <span class="career-experience-dates">Nov 2019 – Jul 2020</span>
+                            <strong>Research Study Assistant – Physics (UCM)</strong>
+                            <span><a href="https://www.iem.csic.es/">CSIC-IEM</a></span>
+                            <span class="career-supervisor">Supervised by <strong><a href="https://orcid.org/0000-0001-7854-8146">Jesús Fernando Barbero González</a></strong></span>
+                        </div>
+                    </div>
                 </li>
             </ul>
-        </section>
-        <section class="content-section page-content academic-panel" aria-labelledby="experience-title">
-            <h2 id="experience-title">Work experience</h2>
+        </details>
+        <details class="content-section page-content academic-panel academic-collapse" open>
+            <summary class="academic-collapse-heading">
+                <h2 id="experience-title">Work experience</h2>
+            </summary>
             <ul class="career-list">
                 <li class="career-item">
-                    <div class="career-item-heading">
-                        <h3>Artificial Intelligence Junior Researcher (LABEC)</h3>
+                    <div class="career-item-left">
+                        <a class="university-link" href="https://web.infn.it/labec/" aria-label="LABEC">
+                            <img class="university-logo" src="../assets/images/logos/labec.png" alt="" loading="lazy">
+                        </a>
                         <span class="career-dates">Jul 2022 – Dec 2025</span>
+                        <a class="career-institution-name" href="https://web.infn.it/labec/">LABEC</a>
                     </div>
-                    <p class="career-institution">Istituto Nazionale di Fisica Nucleare, Sezione di Firenze · Florence, Italy</p>
+                    <div class="career-item-right">
+                        <h3>Research Fellowship – AI Development</h3>
+                        <p class="career-institution-name career-location">Istituto Nazionale di Fisica Nucleare, Sezione di Firenze · Florence, Italy</p>
+                        <p>The work involved designing and training Deep Neural Networks for the automatic recoloring of pictorial artworks from raw nuclear imaging data obtained through XRF. In parallel, I developed a Python package for XRF spectra simulation and built a Dash-based web application to interactively visualize and explore its functionality. This multi-faceted project required the integration of deep learning, scientific computing, software engineering, web development, and containerized deployment workflows (Docker), significantly strengthening my professional expertise in AI and IT infrastructure.</p>
+                        <a class="code-link" href="https://baltig.infn.it/fgarciaa" aria-label="View LABEC project repositories">
+                            <img src="../assets/images/logos/gitlab-baltig.png" alt="GitLab" loading="lazy">
+                        </a>
+                    </div>
+                </li>
+                <li class="career-item">
+                    <div class="career-item-left">
+                        <a class="university-link" href="https://www.calsens.es/en" aria-label="CALSENS">
+                            <img class="university-logo calsens-logo" src="../assets/images/logos/calsens.jpg" alt="" loading="lazy">
+                        </a>
+                        <span class="career-dates">Feb 2022 – Jun 2022</span>
+                        <a class="career-institution-name" href="https://www.calsens.es/en">CALSENS ©</a>
+                        <span class="career-location">Valencia, Spain</span>
+                    </div>
+                    <div class="career-item-right">
+                        <h3>Mathematics Advisor</h3>
+                        <p>I developed a Python code for measuring the deformation of civil structures. The code utilized the Frenet-Serret equations based on curvature measures obtained through optical devices placed on the structures.</p>
+                        <a class="code-link" href="https://github.com/fergarciacode/ShapeSensing" aria-label="View shape sensing code on GitHub">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </div>
                 </li>
             </ul>
-        </section>
-        <section class="content-section page-content academic-panel publications-section" aria-labelledby="publications-title">
-            <div class="publications-heading">
+        </details>
+        <details class="content-section page-content academic-panel publications-section academic-collapse" open>
+            <summary class="academic-collapse-heading">
                 <h2 id="publications-title">Publications</h2>
+            </summary>
+            <div class="publications-heading">
                 <div class="orcid-profile">
                     <a class="orcid-icon-link" href="https://orcid.org/0000-0001-6640-8736" rel="me" aria-label="View ORCID profile">
                         <span class="orcid-icon" aria-hidden="true">iD</span>
@@ -145,8 +193,31 @@
                     <p class="publication-tags"><span>#Collaboration</span> <span>#XRF</span> <span>#CulturalHeritage</span> <span>#DigitalRestoration</span> <span>#NuclearImaging</span></p>
                     <p class="publication-links"><a class="publication-link" href="https://doi.org/10.1007/s12210-023-01174-0">Article</a></p>
                 </li>
+                <li class="publication-item">
+                    <p class="publication-authors">Jesús Fernando Barbero González, <strong>Fernando García-Avello Bofías</strong></p>
+                    <p class="publication-citation"><span class="publication-title">“Curiosidades del oscilador armónico cuántico,”</span> <em>Revista Española de Física</em> (2022).</p>
+                    <p class="publication-tags"><span>#QuantumPhysics</span> <span>#HarmonicOscillator</span></p>
+                    <p class="publication-links"><a class="publication-link" href="https://revistadefisica.es/index.php/ref/article/view/2759">Article</a></p>
+                </li>
+                <li class="publication-item">
+                    <p class="publication-authors">C. Andreani, L. C. Aleotti, D. Fabbri, A. P. Mancini, M. Romizi, M. Viviani, A. Curci, F. Grazzi</p>
+                    <p class="publication-citation"><span class="publication-title">“X-ray and neutron imaging for cultural heritage: the INFN-CHNet experience,”</span> <em>The European Physical Journal Plus</em> (2024).</p>
+                    <p class="publication-tags"><span>#Collaboration</span> <span>#CulturalHeritage</span> <span>#NuclearImaging</span> <span>#X-ray</span> <span>#NeutronImaging</span></p>
+                    <p class="publication-links"><a class="publication-link" href="https://link.springer.com/article/10.1140/epjp/s13360-024-05429-z">Article</a></p>
+                </li>
             </ol>
-        </section>
+        </details>
+        <details class="content-section page-content academic-panel academic-collapse" open>
+            <summary class="academic-collapse-heading">
+                <h2 id="memberships-title">Memberships, certifications &amp; attendance</h2>
+            </summary>
+            <ul class="activity-list">
+                <li class="activity-item">
+                    <strong>Society for Multidisciplinary and Fundamental Research (SEMF)</strong>
+                    <a class="activity-link" href="https://semf.org.es/">Visit SEMF</a>
+                </li>
+            </ul>
+        </details>
     </main>
     <footer class="site-footer">
         <nav class="profile-links footer-profile-links" aria-label="Professional profiles">

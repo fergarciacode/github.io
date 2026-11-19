@@ -393,6 +393,63 @@ main {
     padding: clamp(2rem, 5vw, 4rem);
 }
 
+.academic-collapse {
+    display: block;
+}
+
+.academic-collapse-heading {
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.academic-collapse-heading::-webkit-details-marker {
+    display: none;
+}
+
+.academic-collapse-heading::after {
+    content: "−";
+    margin-left: auto;
+    color: #55725a;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.academic-collapse:not([open]) .academic-collapse-heading::after {
+    content: "+";
+}
+
+.academic-collapse-heading h2 {
+    margin: 0;
+}
+
+.activity-list {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.activity-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e3e7e2;
+}
+
+.activity-link {
+    color: #355d3b;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-underline-offset: 0.15em;
+}
+
 .career-list {
     display: grid;
     gap: 1.25rem;
@@ -406,18 +463,55 @@ main {
     border-top: 1px solid #e3e7e2;
 }
 
-.career-item-heading {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.3rem 1rem;
+.career-item {
+    display: grid;
+    grid-template-columns: minmax(15rem, 42%) 1fr;
+    align-items: start;
+    gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+.career-item-left {
+    display: grid;
+    grid-template-columns: 3.25rem 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    column-gap: 0.75rem;
+    row-gap: 0.25rem;
+}
+
+.career-item-left .university-link {
+    grid-row: 1 / 4;
+}
+
+.career-item-left .career-secondary-logo {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.career-item-right {
+    min-width: 0;
+}
+
+.career-location {
+    color: #68716a;
+    font-size: 0.88rem;
 }
 
 .academic-panel .career-item h3 {
     margin: 0;
     font-size: 1.05rem;
     font-weight: 600;
+}
+
+.academic-panel .career-item h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.academic-panel .career-item h3 a:hover,
+.academic-panel .career-item h3 a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 .qualification-meta {
@@ -444,13 +538,108 @@ main {
     font-weight: 600;
 }
 
-.career-institution {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.35rem 0.65rem;
-    margin: 0.35rem 0 0;
+.career-institution-name {
+    grid-column: 2;
+    margin: 0;
     color: #68716a;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.career-item-right > p:not(.qualification-meta):not(.career-institution-name) {
+    margin: 0.45rem 0 0;
+    line-height: 1.65;
+}
+
+.career-experience {
+    display: grid;
+    gap: 0.15rem;
+    margin-top: 0.85rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e3e7e2;
+    color: #68716a;
+    font-size: 0.88rem;
+}
+
+.career-experience strong {
+    color: #263126;
+    font-size: 0.95rem;
+}
+
+.career-experience-dates {
+    color: #55725a;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.career-supervisor {
+    margin-top: 0.12rem;
+    color: #68716a;
+    font-size: 0.78rem;
+}
+
+.career-supervisor a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.career-experience > span > a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.career-experience > span > a:hover,
+.career-experience > span > a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.career-supervisor a:hover,
+.career-supervisor a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.code-link {
+    display: inline-flex;
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-top: 0.65rem;
+    color: #68716a;
+}
+
+.code-link svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.code-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.code-link:hover,
+.code-link:focus-visible {
+    color: #263126;
+}
+
+.career-item-left .calsens-logo {
+    width: 4.75rem;
+    height: 3.25rem;
+}
+
+.career-item-left a.career-institution-name {
+    color: #68716a;
+    text-decoration: none;
+}
+
+.career-item-left a.career-institution-name:hover,
+.career-item-left a.career-institution-name:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 .university-link {
@@ -688,6 +877,19 @@ main {
         width: min(100% - 1.25rem, 68rem);
         gap: 1.25rem;
         margin-block: 1.5rem;
+    }
+
+    .career-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .career-item-right {
+        grid-row: 1;
+    }
+
+    .career-item-left {
+        grid-row: 2;
     }
 
 }
